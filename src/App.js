@@ -71,7 +71,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App row">
       <TextArea
         textareaContent={initialTextareaContent}
         onChange={onChangeHandler}

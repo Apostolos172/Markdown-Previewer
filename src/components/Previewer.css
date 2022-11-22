@@ -1,4 +1,4 @@
-#preview {
+/* #preview {
   width: 90%;
   border: 1px solid black;
   margin: auto;
@@ -6,6 +6,56 @@
   margin-top: 10px;
   text-align: left;
   margin-bottom: 20px;
+} */
+
+#preview-parent {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#preview {
+  height: 100%;
+  padding: 3%;
+  width: 85%;
+  height: 85%;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 5px green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gainsboro;
+  color: black;
+}
+
+#preview::-webkit-scrollbar {
+	/* It doesn't work on firefox browsers */
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#preview::-webkit-scrollbar-thumb {
+  /* It doesn't work on firefox browsers */
+	/* border-radius: 10px; */
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: green;
+}
+
+#preview::-webkit-scrollbar-track {
+	/* It doesn't work on firefox browsers */
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* border-radius: 10px; */
+	background-color: #F5F5F5;
 }
 
 #preview * {
@@ -16,4 +66,10 @@
   max-width: 50%;
   margin: auto;
   display: block;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #preview-parent {
+  }
 }
