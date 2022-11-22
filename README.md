@@ -1,5 +1,11 @@
 # markdown previewer
 
+See it **live** in the following url [markdown-previewer-apostolos172.vercel.app](https://markdown-previewer-apostolos172.vercel.app/).
+
+Here is a screenshot of the app 
+
+![markdown previewer](https://github.com/Apostolos172/Markdown-Previewer/blob/master/screenshots/markdown%20previewer.png?raw=true)
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
